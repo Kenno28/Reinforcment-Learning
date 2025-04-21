@@ -8,7 +8,7 @@ This repository documents my journey into RL by implementing, analyzing, and imp
 | Project                       | Description                                                                       | Status     |
 |-------------------------------|-----------------------------------------------------------------------------------|------------|
 | 🧊 **FrozenLake Q-Learning**  | Classic table-based Q-learning agent for the FrozenLake environment              | ✅ Complete |
-
+| 🤖 **CartPole DQN**           | Deep Q-Network agent that learns to balance a pole using visualized rewards and epsilon-greedy exploration | ✅ Complete |
 
 ---
 
@@ -25,3 +25,19 @@ The agent has no prior knowledge of the environment and must learn the optimal p
 - The Bellman equation explained and implemented
 - Exploration vs. Exploitation through epsilon decay
 - Off-policy (Q-Learning) vs. On-policy (SARSA)
+
+---
+
+## 🤖 CartPole DQN
+
+### 🔍 Overview
+
+This project implements a Deep Q-Network (DQN) to solve the CartPole-v1 environment. Instead of using a Q-table, the agent uses a neural network to approximate Q-values in a continuous state space. This allows the agent to generalize better and scale to more complex environments.
+
+### 🧠 Key Concepts Learned
+
+- Building a Q-network using TensorFlow and Keras
+- Using Replay Buffer for stabilized learning
+- Epsilon-greedy strategy for exploration vs. exploitation
+- Updating Q-values with the Bellman equation
+- Training the model step-by-step during episodes
